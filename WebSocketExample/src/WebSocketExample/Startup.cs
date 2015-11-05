@@ -7,13 +7,15 @@ using Microsoft.AspNet.WebSockets.Server;
 using Microsoft.AspNet.StaticFiles;
 using Microsoft.AspNet.Http;
 using System.Collections.Generic;
+using Microsoft.AspNet.Hosting;
 
 namespace WebSocketExample
 {
     public class Startup
     {
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseIISPlatformHandler();
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseWebSockets(); // Only for Kestrel

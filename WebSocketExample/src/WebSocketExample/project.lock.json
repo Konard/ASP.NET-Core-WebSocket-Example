@@ -187,6 +187,24 @@
           "lib/dnx451/Microsoft.AspNet.Http.Features.dll": {}
         }
       },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -900,6 +918,19 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.AspNet.Http.Features.dll": {}
+        }
+      },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8",
+          "System.Security.Principal.Windows": "4.0.0-beta-23409"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
         }
       },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
@@ -2291,6 +2322,24 @@
           "lib/dnx451/Microsoft.AspNet.Http.Features.dll": {}
         }
       },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -3024,6 +3073,24 @@
           "lib/dnx451/Microsoft.AspNet.Http.Features.dll": {}
         }
       },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -3740,6 +3807,19 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.AspNet.Http.Features.dll": {}
+        }
+      },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8",
+          "System.Security.Principal.Windows": "4.0.0-beta-23409"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
         }
       },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
@@ -5491,6 +5571,19 @@
           "lib/dnxcore50/Microsoft.AspNet.Http.Features.dll": {}
         }
       },
+      "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta8",
+          "System.Security.Principal.Windows": "4.0.0-beta-23409"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -7200,6 +7293,19 @@
         "Microsoft.AspNet.Http.Features.1.0.0-beta8.nupkg",
         "Microsoft.AspNet.Http.Features.1.0.0-beta8.nupkg.sha512",
         "Microsoft.AspNet.Http.Features.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.IISPlatformHandler/1.0.0-beta8": {
+      "type": "package",
+      "sha512": "+PSE7BrucroIWZw8C1fQilmuo84ToZ//5Ek7AJ77JSL0SrCK+KrzrmcywDRBLruUuVZbkjHkFW3OA+VFwKOkuA==",
+      "files": [
+        "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.dll",
+        "lib/dnx451/Microsoft.AspNet.IISPlatformHandler.xml",
+        "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.dll",
+        "lib/dnxcore50/Microsoft.AspNet.IISPlatformHandler.xml",
+        "Microsoft.AspNet.IISPlatformHandler.1.0.0-beta8.nupkg",
+        "Microsoft.AspNet.IISPlatformHandler.1.0.0-beta8.nupkg.sha512",
+        "Microsoft.AspNet.IISPlatformHandler.nuspec"
       ]
     },
     "Microsoft.AspNet.Server.Kestrel/1.0.0-beta8": {
@@ -10234,10 +10340,11 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-beta8",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta8",
-      "Microsoft.AspNet.WebSockets.Server >= 1.0.0-beta8",
+      "Microsoft.AspNet.Server.Kestrel >= 1.0.0-beta8",
       "Microsoft.AspNet.StaticFiles >= 1.0.0-beta8",
-      "Microsoft.AspNet.Server.Kestrel >= 1.0.0-beta8"
+      "Microsoft.AspNet.WebSockets.Server >= 1.0.0-beta8"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

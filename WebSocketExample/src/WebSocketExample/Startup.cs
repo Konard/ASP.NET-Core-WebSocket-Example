@@ -21,6 +21,12 @@ namespace WebSocketExample
             {
                 builder.Use(async (context, next) =>
                 {
+                    // Comment this out to test native server implementations
+                    //builder.UseWebSockets(new WebSocketOptions()
+                    //{
+                    //    ReplaceFeature = true,
+                    //});
+
                     if (context.WebSockets.IsWebSocketRequest)
                     {
                         var webSocket = await context.WebSockets.AcceptWebSocketAsync();

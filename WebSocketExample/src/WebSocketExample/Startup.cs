@@ -16,17 +16,12 @@ namespace WebSocketExample
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseWebSockets(); // Only for Kestrel
 
             app.Map("/ws", builder =>
             {
                 builder.Use(async (context, next) =>
                 {
-                    // Comment this out to test native server implementations
-                    //builder.UseWebSockets(new WebSocketOptions()
-                    //{
-                    //    ReplaceFeature = true,
-                    //});
-
                     if (context.WebSockets.IsWebSocketRequest)
                     {
                         var webSocket = await context.WebSockets.AcceptWebSocketAsync();

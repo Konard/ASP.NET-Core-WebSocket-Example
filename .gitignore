@@ -124,7 +124,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-#publish/
+publish/
 
 # Publish Web Output
 *.[Pp]ublish.xml
@@ -194,8 +194,3 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
-
-!Publish/
-!Publish/**/*
-Publish/**/packages/*
-Publish/**/runtimes/*

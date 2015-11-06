@@ -27,7 +27,7 @@
     </form>
     <script>
         (function () {
-            socket = new WebSocket("ws://localhost:5000/ws");
+            socket = new WebSocket("ws://" + location.host + "/ws");
 
             socket.onopen = function () {
                 console.log("Соединение установлено.");

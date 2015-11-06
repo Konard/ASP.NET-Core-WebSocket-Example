@@ -18,4 +18,4 @@ https://youtu.be/ksu1uGfOfOo (Part 6)
 
 https://github.com/Konard/ASP.NET-5-CoreCLR-WebSocket-Example/issues/1#issuecomment-154317756
 
-https://youtu.be/ny2TSHMlcC8
+https://youtu.be/ny2TSHMlcC8 (Video recording of attempt to run on Linux)

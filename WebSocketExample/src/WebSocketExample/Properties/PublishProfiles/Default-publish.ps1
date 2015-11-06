@@ -1,4 +1,4 @@
-﻿[cmdletbinding(SupportsShouldProcess=$true)]
+[cmdletbinding(SupportsShouldProcess=$true)]
 param($publishProperties, $packOutput, $nugetUrl)
 
 # to learn more about this file visit http://go.microsoft.com/fwlink/?LinkId=524327

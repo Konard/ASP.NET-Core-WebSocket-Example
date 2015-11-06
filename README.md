@@ -17,3 +17,5 @@ https://youtu.be/ksu1uGfOfOo (Part 6)
 ## Run on Linux
 
 https://github.com/Konard/ASP.NET-5-CoreCLR-WebSocket-Example/issues/1#issuecomment-154317756
+
+https://youtu.be/ny2TSHMlcC8

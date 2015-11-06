@@ -27,7 +27,10 @@
     </form>
     <script>
         (function () {
-            socket = new WebSocket("ws://" + location.host + "/ws");
+            var webSocketProtocol = location.protocol == "https:" ? "wss:" : "ws:";
+            var webSocketURI = webSocketProtocol + "//" + location.host + "/ws";
+
+            socket = new WebSocket(webSocketURI);
 
             socket.onopen = function () {
                 console.log("Соединение установлено.");

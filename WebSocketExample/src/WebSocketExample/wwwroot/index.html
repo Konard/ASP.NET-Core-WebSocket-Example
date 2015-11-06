@@ -20,11 +20,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     </style>
-
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-
+</head>
+<body>
+    <form id="form">
+        <input id="message" autocomplete="off" />
+    </form>
     <script>
-        $(document).ready(function () {
+        (function () {
             socket = new WebSocket("ws://localhost:5000/ws");
 
             socket.onopen = function () {
@@ -48,17 +50,14 @@
                 console.log("Ошибка " + error.message);
             };
 
-            $('form').submit(function () {
-                socket.send($('#message').val());
-                $('#message').val('');
+            var form = document.getElementById('form');
+            var message = document.getElementById('message');
+            form.onsubmit = function () {
+                socket.send(message.value);
+                message.value = '';
                 return false;
-            });
-        });
+            };
+        })();
     </script>
-</head>
-<body>
-    <form action="">
-        <input id="message" autocomplete="off" />
-    </form>
 </body>
 </html>

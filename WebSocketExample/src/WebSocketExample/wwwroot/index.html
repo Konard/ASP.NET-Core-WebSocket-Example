@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -33,24 +33,24 @@
             socket = new WebSocket(webSocketURI);
 
             socket.onopen = function () {
-                console.log("Соединение установлено.");
+                console.log("Connected.");
             };
 
             socket.onclose = function (event) {
                 if (event.wasClean) {
-                    console.log('Соединение закрыто чисто');
+                    console.log('Disconnected.');
                 } else {
-                    console.log('Обрыв соединения'); // например, если процесс сервера завершён
+                    console.log('Connection loss.'); // for example if server processes is killed
                 }
-                console.log('Код: ' + event.code + ' причина: ' + event.reason);
+                console.log('Code: ' + event.code + '. Reason: ' + event.reason);
             };
 
             socket.onmessage = function (event) {
-                console.log("Получены данные " + event.data);
+                console.log("Data received: " + event.data);
             };
 
             socket.onerror = function (error) {
-                console.log("Ошибка " + error.message);
+                console.log("Error: " + error.message);
             };
 
             var form = document.getElementById('form');

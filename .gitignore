@@ -142,7 +142,6 @@ publish/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
-project.lock.json
 
 # Windows Azure Build Output
 csx/
@@ -195,3 +194,7 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# ASP.NET 5/vNEXT
+project.lock.json
+launchSettings.json

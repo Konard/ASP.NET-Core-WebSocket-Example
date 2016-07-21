@@ -22,3 +22,11 @@ dnx web --server.urls http://$IP:$PORT
 
 ## Videos of the development process
 https://www.youtube.com/playlist?list=PLeYxH0Vd8lotkvykdfCLTWq8ulzEZrStA
+
+## Cloud 9 IDE Virtual Machine
+
+Workspace description address: https://c9.io/konard/websocket-example
+
+IDE address: https://ide.c9.io/konard/websocket-example
+
+You can use an ready Cloud 9 IDE Virtual Machine to browse the code or to clone it and begin modification as soon as possible. Just register on https://c9.io using GitHub account. Navigate to https://c9.io/konard/websocket-example and press clone, and you are done.

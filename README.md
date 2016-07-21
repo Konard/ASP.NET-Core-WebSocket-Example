@@ -29,7 +29,7 @@ Workspace description address: https://c9.io/konard/websocket-example
 
 IDE address: https://ide.c9.io/konard/websocket-example
 
-You can use the ready Cloud 9 IDE Virtual Machine to browse the code or to clone it and begin modification as soon as possible. Just register on https://c9.io using GitHub account. Navigate to https://c9.io/konard/websocket-example and press clone, and you are done.
+You can use ready Cloud 9 IDE Virtual Machine to browse the code or to clone it and begin modification as soon as possible. Just register on https://c9.io using GitHub account. Navigate to https://c9.io/konard/websocket-example and press clone, and you are done.
 
 ## Live Demo
 

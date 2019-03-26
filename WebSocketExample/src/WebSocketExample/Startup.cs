@@ -1,23 +1,33 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Builder;
+using Microsoft.AspNetCore.Builder;
 using System.Net.WebSockets;
-using Microsoft.AspNet.WebSockets.Server;
-using Microsoft.AspNet.StaticFiles;
-using Microsoft.AspNet.Http;
+//using Microsoft.AspNetCore.WebSockets.Server;
+using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
-using Microsoft.AspNet.Hosting;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WebSocketExample
 {
     public class Startup
     {
+        public void ConfigureServices(IServiceCollection services)
+        {
+        }
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseIISPlatformHandler();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseFileServer(enableDirectoryBrowsing: true);
             app.UseWebSockets(); // Only for Kestrel
 
             app.Map("/ws", builder =>

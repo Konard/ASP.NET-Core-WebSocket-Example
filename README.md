@@ -11,5 +11,5 @@ cd WebSocketExample
 dotnet run
 ```
 
-## Videos of the development process
+## Development process videos
 https://www.youtube.com/playlist?list=PLeYxH0Vd8lotkvykdfCLTWq8ulzEZrStA

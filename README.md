@@ -1,11 +1,13 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/konard/asp.net-core-websocket-example/badge)](https://www.codefactor.io/repository/github/konard/asp.net-core-websocket-example)
 
-### Setup
+# ASP.NET Core WebSocket Example
+
+## Setup
 Requires .NET Core 2.2 SDK and Runtime.
 
 https://dotnet.microsoft.com/download
 
-### Run
+## Run
 ```
 cd WebSocketExample
 dotnet run
